@@ -1,0 +1,120 @@
+.wrapper {
+  background: radial-gradient(
+    92.08% 92.08% at 48.75% 100%,
+    #3c1171 0%,
+    #dc77f7 100%
+  );
+  padding: 50px 0;
+  padding-top: calc(50px + 104px);
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: center;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+.buyButton {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #000;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 3px solid #000;
+  border-radius: 9999rem;
+  box-shadow: 4px 4px 0px 0px #000;
+  background-color: #fff;
+
+  padding: 1rem 20px;
+
+  line-height: 1.25rem;
+  letter-spacing: 0.8px;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+.solana {
+  width: 20px;
+}
+.heading {
+  font-size: 50px;
+  max-width: 450px;
+}
+.comingSoonButton {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #000;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 15px 22px;
+
+  border: 3px solid #000;
+  box-shadow: 4px 4px 0px 0px #000;
+  border-radius: 1.25rem;
+  background-color: #ffc701;
+  width: 100%;
+  max-width: 220px;
+}
+.imageContainer {
+  display: flex;
+  justify-content: center;
+}
+.heroImg {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 450px;
+}
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    padding-top: calc(20px + 104px);
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .textContainer {
+    align-items: center;
+  }
+  .heading {
+    text-align: center;
+  }
+}

@@ -1,0 +1,85 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: transparent;
+  transition: 0.3s;
+  background: #dc77f7;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.wrapperBg {
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.img {
+  width: 50px;
+}
+.logoText {
+  font-size: 24px;
+}
+.navItems {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.navItem {
+  color: #fff;
+  font-family: "Asap", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 162.5%;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.icon {
+  display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .navItems {
+    flex-direction: column;
+    gap: 40px;
+    min-height: 100vh;
+    background: radial-gradient(
+      92.08% 92.08% at 48.75% 100%,
+      #3c1171 0%,
+      #dc77f7 100%
+    );
+    transform: translateX(250%);
+    transition: 0.3s;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    padding-top: 50px;
+    max-width: 320px;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .sidebar {
+    transform: translateX(0);
+    right: 0;
+  }
+
+  .icon {
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 28px;
+  }
+}

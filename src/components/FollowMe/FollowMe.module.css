@@ -1,0 +1,161 @@
+.wrapper {
+  padding: 100px 0;
+  background: radial-gradient(
+    92.08% 92.08% at 48.75% 100%,
+    #3c1171 0%,
+    #dc77f7 100%
+  );
+}
+
+.container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 550px;
+  width: 100%;
+}
+.logo {
+  width: 350px;
+}
+.followContainer {
+  position: absolute;
+  top: 0;
+  transform: translateX(100%);
+}
+.follow {
+  width: 250px;
+  position: relative;
+  transition: 0.3s;
+}
+.follow:hover {
+  transform: translateY(-10px);
+}
+.tagline {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  top: 20%;
+  left: 20%;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-bottom: 200px;
+}
+.heading {
+  font-size: 70px;
+}
+.text {
+  line-height: 120%;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-top: 10px;
+}
+.iconContainer {
+  box-shadow: 4px 4px 0px 0px black;
+  border: 4px solid;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 6.3125rem;
+  height: 6.3125rem;
+  transition: 0.3s;
+}
+.iconContainer:hover {
+  transform: translateY(-5px);
+}
+.socialIcon {
+  font-size: 28px;
+  color: #000;
+}
+.name {
+  font-size: 17px;
+  color: #000;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 1199px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+  }
+  .imageContainer {
+    justify-content: center;
+  }
+  .textContainer {
+    padding: 0;
+    align-items: center;
+  }
+  .text {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .logo {
+    width: 250px;
+  }
+  .imageContainer {
+    transform: translateX(-25px);
+  }
+  .followContainer {
+    transform: translateX(90%);
+  }
+  .follow {
+    width: 160px;
+    position: relative;
+    transition: 0.3s;
+  }
+  .tagline {
+    font-size: 16px;
+    left: 15%;
+  }
+  .heading {
+    font-size: 60px;
+  }
+  .iconContainer {
+    width: 5.3125rem;
+    height: 5.3125rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .heading {
+    font-size: 45px;
+  }
+  .name {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .logo {
+    width: 200px;
+  }
+  .tagline {
+    font-size: 13px;
+  }
+  .follow {
+    width: 130px;
+    position: relative;
+    transition: 0.3s;
+  }
+  .socials {
+    gap: 10px;
+  }
+  .socialIcon {
+    font-size: 20px;
+  }
+}
