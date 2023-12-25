@@ -8,7 +8,7 @@
   background: #fe6e85;
   padding: 15px 0;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 10;
 }
 .wrapperBg {
