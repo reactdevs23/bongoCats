@@ -74,6 +74,10 @@
   color: #000;
   text-align: center;
 }
+.img {
+  max-width: 300px;
+  width: 100%;
+}
 @media only screen and (max-width: 1199px) {
   .container {
     max-width: 750px;

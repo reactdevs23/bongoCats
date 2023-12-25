@@ -1,10 +1,6 @@
 .wrapper {
   padding: 100px 0;
-  background: radial-gradient(
-    92.08% 92.08% at 48.75% 100%,
-    #3c1171 0%,
-    #dc77f7 100%
-  );
+  background: #fe6e85;
 }
 
 .container {

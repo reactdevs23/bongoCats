@@ -1,11 +1,10 @@
 .wrapper {
-  background: radial-gradient(
-    92.08% 92.08% at 48.75% 100%,
-    #3c1171 0%,
-    #dc77f7 100%
-  );
+  background: #fe6e85;
   padding: 50px 0;
   padding-top: calc(50px + 104px);
+  min-height: calc(100v - 104px);
+  display: flex;
+  align-items: center;
 }
 .container {
   display: grid;

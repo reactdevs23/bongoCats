@@ -1,15 +1,16 @@
 import React from "react";
 import styles from "./RoadMap.module.css";
 import Line from "../../images/Line.jsx";
-import Sharp from "../../images/Sharp.jsx";
+
+import { gif } from "../../images/index.js";
 
 const RoadMap = () => {
   const data = [
-    { title: "Sharp", img: <Sharp />, bg: "#ffc701" },
-    { title: "Stab!", img: <Sharp />, bg: "#F24E1E" },
-    { title: "Stab", img: <Sharp />, bg: "#ffc701" },
-    { title: "Clean Evidence", img: <Sharp />, bg: "#F24E1E" },
-    { title: "Thanks For Cleaning Evidence", img: <Sharp />, bg: "#ffc701" },
+    { title: "Sharp", img: gif, bg: "#ffc701" },
+    { title: "Stab!", img: gif, bg: "#F24E1E" },
+    { title: "Stab", img: gif, bg: "#ffc701" },
+    { title: "Clean Evidence", img: gif, bg: "#F24E1E" },
+    { title: "Thanks For Cleaning Evidence", img: gif, bg: "#ffc701" },
   ];
   return (
     <div className={styles.wrapper} id="roadmap">
@@ -32,7 +33,7 @@ const RoadMap = () => {
                 {i + 1}
               </h4>
               <h3 className={styles.title}>{el.title}</h3>
-              <Sharp />
+              <img src={el.img} alt="#" className={styles.img} />
             </div>
           </div>
         ))}

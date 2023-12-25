@@ -4,6 +4,7 @@ import { AiOutlineAlignRight } from "react-icons/ai";
 import styles from "./Navbar.module.css";
 import Logo from "../../images/Logo";
 import { Link } from "react-scroll";
+import { logo } from "../../images";
 
 const Navbar = () => {
   const navItems = [
@@ -41,13 +42,14 @@ const Navbar = () => {
           duration={500}
           className={styles.logoContainer}
         >
-          <div
+          <img
+            src={logo}
+            alt="#"
             className={styles.img}
             data-aos-delay="500"
             data-aos="fade-right"
-          >
-            <Logo />
-          </div>
+          />
+
           <h3 className={styles.logoText} data-aos="fade-right">
             BongoCats
           </h3>
