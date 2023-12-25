@@ -2,8 +2,9 @@ import React from "react";
 import { FaTelegramPlane, FaDiscord, FaTwitter } from "react-icons/fa";
 
 import styles from "./FollowMe.module.css";
-import Logo from "../../images/Logo";
+
 import Follow from "../../images/Follow";
+import { logo } from "../../images";
 
 const FollowMe = () => {
   const socials = [
@@ -26,14 +27,15 @@ const FollowMe = () => {
   return (
     <div className={styles.wrapper}>
       <div className={[styles.container, "container"].join(" ")}>
-        <div className={styles.imageContainer} data-aos="fade-down">
-          <div className={styles.logo}>
-            <Logo />
-          </div>
-          <div className={styles.followContainer}>
-            <div className={styles.follow}>
-              <Follow />
-              <p className={styles.tagline}>Follow Me</p>
+        <div className={styles.imageContainer}>
+          <div data-aos="fade-down">
+            <img src={logo} alt="#" className={styles.logo} />
+
+            <div className={styles.followContainer}>
+              <div className={styles.follow}>
+                <Follow />
+                <p className={styles.tagline}>Follow Me</p>
+              </div>
             </div>
           </div>
         </div>

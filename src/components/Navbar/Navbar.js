@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
 import { AiOutlineAlignRight } from "react-icons/ai";
 import styles from "./Navbar.module.css";
-import Logo from "../../images/Logo";
+
 import { Link } from "react-scroll";
 import { logo } from "../../images";
 

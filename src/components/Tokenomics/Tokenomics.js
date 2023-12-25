@@ -1,16 +1,18 @@
 import React from "react";
 import styles from "./Tokenomics.module.css";
-import Logo from "../../images/Logo";
+
 import Counter from "./Counter/Counter";
+import { logo } from "../../images";
 
 const Tokenomics = () => {
   return (
     <div className={styles.wrapper} id="tokenomics">
       <div className={styles.container}>
         <div className={styles.logoAndHeading}>
-          <div className={styles.img} data-aos="fade-right">
-            <Logo />
+          <div className={styles.logoContainer} data-aos="fade-right">
+            <img src={logo} alt="#" className={styles.logo} />
           </div>
+
           <h2 className={styles.heading} data-aos="fade-left">
             TOKENOMICS
           </h2>
@@ -20,13 +22,11 @@ const Tokenomics = () => {
             {" "}
             <Counter start={0} end={694200000} durationTime={10} />
           </p>
-          <p
-            className={styles.joints}
-            data-aos-delay="100"
-            data-aos="fade-left"
-          >
-            Joints
-          </p>
+          <div data-aos="fade-left">
+            <p className={styles.joints} data-aos-delay="100">
+              Joints
+            </p>
+          </div>
         </div>{" "}
         <div className={styles.progressContainer}>
           <div className={styles.box} data-aos="fade-down">

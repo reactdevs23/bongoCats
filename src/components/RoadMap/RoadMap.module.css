@@ -37,7 +37,8 @@
   padding: 1rem;
   background: white;
   width: 20.7rem;
-  height: 22rem;
+  min-height: 22rem;
+  height: auto;
   position: relative;
   border-radius: 2rem;
   -webkit-align-self: start;
@@ -51,7 +52,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4.75rem;
+  min-width: 4.75rem;
+
   height: 4.75rem;
   border-radius: 50%;
 
@@ -98,8 +100,14 @@
   }
 }
 @media only screen and (max-width: 520px) {
+  .card {
+    min-height: 18rem;
+  }
+  .title {
+    font-size: 28px;
+  }
   .step {
-    width: 3.75rem;
+    min-width: 3.75rem;
     height: 3.75rem;
     font-size: 18px;
     transform: translateY(-50%);
