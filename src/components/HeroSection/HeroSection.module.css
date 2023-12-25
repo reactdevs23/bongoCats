@@ -11,6 +11,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 35px;
   align-items: center;
+  max-width: 1024px;
 }
 .textContainer {
   display: flex;
@@ -61,20 +62,10 @@
   max-width: 450px;
 }
 .comingSoonButton {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
+
   flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+
   align-items: center;
   color: #000;
   cursor: pointer;
