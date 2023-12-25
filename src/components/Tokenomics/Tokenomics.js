@@ -22,11 +22,8 @@ const Tokenomics = () => {
             {" "}
             <Counter start={0} end={694200000} durationTime={10} />
           </p>
-          <div data-aos="fade-left">
-            <p className={styles.joints} data-aos-delay="100">
-              Joints
-            </p>
-          </div>
+
+          <p className={styles.joints}>Joints</p>
         </div>{" "}
         <div className={styles.progressContainer}>
           <div className={styles.box} data-aos="fade-down">
